@@ -26,7 +26,6 @@ def parse_fatwa(path: str):
 
     title = paras[0]
 
-    # metadata من السطر الأول
     fatwa_number = None
     fatwa_year = None
     issued_date = None
