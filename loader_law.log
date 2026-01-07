@@ -1,0 +1,62 @@
+[2026-01-06 15:37:00] UPDATE Law id=3 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 15:37:00] REPLACE Law_Article count=4 for law_id=3
+[2026-01-06 15:37:00] UPDATE Law id=4 year=2022 title=إصدار قانون المالية العامة الموحد. الجريدة الرسمية 5 مكرر (د
+[2026-01-06 15:37:00] REPLACE Law_Article count=86 for law_id=4
+[2026-01-06 15:37:00] DONE
+[2026-01-06 16:29:49] INSERT Law id=1 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 16:29:49] REPLACE Law_Article count=4 for law_id=1
+[2026-01-06 16:29:49] INSERT Law id=2 year=2022 title=إصدار قانون المالية العامة الموحد. الجريدة الرسمية 5 مكرر (د
+[2026-01-06 16:29:49] REPLACE Law_Article count=86 for law_id=2
+[2026-01-06 16:29:49] DONE
+[2026-01-06 20:21:35] UPDATE Law id=1 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 20:21:35] REPLACE Law_Article count=4 for law_id=1
+[2026-01-06 20:21:35] UPDATE Law id=2 year=2022 title=إصدار قانون المالية العامة الموحد. الجريدة الرسمية 5 مكرر (د
+[2026-01-06 20:21:36] REPLACE Law_Article count=86 for law_id=2
+[2026-01-06 20:21:36] DONE
+[2026-01-06 20:23:44] UPDATE Law id=1 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 20:23:44] REPLACE Law_Article count=4 for law_id=1
+[2026-01-06 20:23:44] UPDATE Law id=2 year=2022 title=إصدار قانون المالية العامة الموحد. الجريدة الرسمية 5 مكرر (د
+[2026-01-06 20:23:44] REPLACE Law_Article count=86 for law_id=2
+[2026-01-06 20:23:44] DONE
+[2026-01-06 20:26:55] UPDATE Law id=1 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 20:26:55] REPLACE Law_Article count=4 for law_id=1
+[2026-01-06 20:26:55] DONE
+[2026-01-06 20:28:06] UPDATE Law id=1 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 20:28:06] REPLACE Law_Article count=4 for law_id=1
+[2026-01-06 20:28:06] DONE
+[2026-01-06 20:30:38] INSERT Law id=3 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 20:30:38] REPLACE Law_Article count=4 for law_id=3
+[2026-01-06 20:30:38] INSERT Law id=4 year=2022 title=إصدار قانون المالية العامة الموحد.
+[2026-01-06 20:30:39] REPLACE Law_Article count=86 for law_id=4
+[2026-01-06 20:30:39] DONE
+[2026-01-06 20:40:43] INSERT Law id=5 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 20:40:43] REPLACE Law_Article count=4 for law_id=5
+[2026-01-06 20:40:43] INSERT Law id=6 year=2022 title=إصدار قانون المالية العامة الموحد.
+[2026-01-06 20:40:44] REPLACE Law_Article count=86 for law_id=6
+[2026-01-06 20:40:44] DONE
+[2026-01-06 20:41:48] UPDATE Law id=5 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-06 20:41:48] REPLACE Law_Article count=4 for law_id=5
+[2026-01-06 20:41:48] UPDATE Law id=6 year=2022 title=إصدار قانون المالية العامة الموحد.
+[2026-01-06 20:41:48] REPLACE Law_Article count=86 for law_id=6
+[2026-01-06 20:41:48] DONE
+[2026-01-07 17:41:44] UPDATE Law id=5 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-07 17:41:44] REPLACE Law_Article count=4 for law_id=5
+[2026-01-07 17:41:44] UPDATE Law id=6 year=2022 title=إصدار قانون المالية العامة الموحد.
+[2026-01-07 17:41:45] SKIP duplicate article key=('25', 'content') for law_id=6
+[2026-01-07 17:41:45] SKIP duplicate article key=('31', 'content') for law_id=6
+[2026-01-07 17:41:45] REPLACE Law_Article count=84 for law_id=6
+[2026-01-07 17:41:45] DONE
+[2026-01-07 17:43:00] UPDATE Law id=5 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-07 17:43:00] REPLACE Law_Article count=4 for law_id=5
+[2026-01-07 17:43:00] UPDATE Law id=6 year=2022 title=إصدار قانون المالية العامة الموحد.
+[2026-01-07 17:43:00] SKIP duplicate article key=('25', 'content') for law_id=6
+[2026-01-07 17:43:00] SKIP duplicate article key=('31', 'content') for law_id=6
+[2026-01-07 17:43:00] REPLACE Law_Article count=84 for law_id=6
+[2026-01-07 17:43:00] DONE
+[2026-01-07 17:43:18] UPDATE Law id=5 year=2022 title=تعديل بعض أحكام قانون تنظيم الجامعات الصادر بالقانون رقم 49 
+[2026-01-07 17:43:18] REPLACE Law_Article count=4 for law_id=5
+[2026-01-07 17:43:18] UPDATE Law id=6 year=2022 title=إصدار قانون المالية العامة الموحد.
+[2026-01-07 17:43:18] SKIP duplicate article key=('25', 'content') for law_id=6
+[2026-01-07 17:43:18] SKIP duplicate article key=('31', 'content') for law_id=6
+[2026-01-07 17:43:18] REPLACE Law_Article count=84 for law_id=6
+[2026-01-07 17:43:18] DONE
