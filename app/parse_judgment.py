@@ -27,7 +27,6 @@ def parse_judgment(path: str):
 
     header_block = "\n".join(paras[:12])
 
-    # line1 example: "جمهورية مصر العربية - محكمة النقض - مدني"
     line1 = paras[0] if paras else ""
     parts = [p.strip() for p in line1.split("-") if p.strip()]
     court_name = None
@@ -133,5 +132,4 @@ def parse_judgment(path: str):
         "reasons": "\n".join(reasons_parts).strip() if reasons_parts else None,
     }
 
-    # ✅ لاحظي: مفيش paragraphs ولا full_text في الناتج
     return judgment, principles
