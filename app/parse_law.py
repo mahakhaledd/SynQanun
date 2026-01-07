@@ -66,7 +66,6 @@ def parse_law(path: str):
     if m:
         subject = m.group(1).strip()
 
-    # لو "بشأن ..." مش في أول سطر، دور في باقي السطور
     if not subject:
         for p in paras[:20]:
             if p.startswith("بشأن"):
@@ -83,7 +82,6 @@ def parse_law(path: str):
         "gazette_reference": gazette,
     }
 
-    # --------- Articles ---------
     articles = []
     current = None
 
@@ -95,15 +93,11 @@ def parse_law(path: str):
                     current[k] = current[k].strip()
             articles.append(current)
             current = None
-
-    # ✅ تعديل مهم:
-    # - يقبل "المادة" أو "مادة"
-    # - article_type issuance فقط لو العنوان فيه "اصدار"
-    # - repeated لو "مكرر"
+ 
     art_header = re.compile(r"^(?:المادة|مادة)\s+(\d+)(?:\s+(اصدار|مكرر))?$")
 
     for p in paras:
-        # "مواد إصدار" هنعتبره مجرد عنوان/فاصل، مش هيحوّل كل اللي بعده issuance
+        
         if p.strip() == "مواد إصدار":
             continue
 
@@ -111,7 +105,7 @@ def parse_law(path: str):
         if m:
             flush()
             num = m.group(1)
-            tag = m.group(2)  # اصدار أو مكرر أو None
+            tag = m.group(2)   
 
             is_repeated = (tag == "مكرر")
             article_type = "issuance" if tag == "اصدار" else "content"
@@ -129,14 +123,14 @@ def parse_law(path: str):
         if not current:
             continue
 
-        # final_text_date
+         
         if "النص النهائى للمادة بتاريخ" in p:
             dm = re.search(r"(\d{1,2}/\d{1,2}/\d{4}|\d{4}-\d{2}-\d{2})", p)
             if dm:
                 current["final_text_date"] = _date_any(dm.group(1))
             continue
 
-        # original_text
+         
         if p.startswith("النص الاصلى للمادة"):
             txt = p.replace("النص الاصلى للمادة", "", 1).strip()
             current["original_text"] = (current["original_text"] or "")
@@ -144,7 +138,7 @@ def parse_law(path: str):
                 current["original_text"] + " " + txt).strip()
             continue
 
-        # normal content -> final_text
+
         current["final_text"] = (current["final_text"] + " " + p).strip()
 
     flush()
