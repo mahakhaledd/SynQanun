@@ -24,7 +24,7 @@ SynQanun/
 │   ├── parse_fatwa.py          # Fatwa parser
 │   ├── schema.sql              # Database Tables & Indexes
 │   └── requirements.txt        # Project dependencies
-├── load files/                 # SQL Ingestion Scripts
+├── load_files/                 # SQL Ingestion Scripts
 │   ├── load_fatwas_sqlserver.py
 │   ├── load_laws_sqlserver.py
 │   └── load_judgments_sqlserver.py
@@ -42,10 +42,10 @@ SynQanun/
 pip install -r requirements.txt
 ```
  
-### Step 2 — Run Database Script
+## Step 2 — Run Database Script
 Execute the SQL script in your database manager (SSMS)
 Location: app/schema.sql
-## PostgreSQL Mapping (Important Note)
+### PostgreSQL Mapping (Important Note)
 
 Although the current implementation runs on **MS SQL Server**, the schema is designed to be **fully compatible with PostgreSQL**. To migrate:
 
