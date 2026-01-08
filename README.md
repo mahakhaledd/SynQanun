@@ -44,7 +44,18 @@ pip install -r requirements.txt
  
 ### Step 2 — Run Database Script
 Execute the SQL script in your database manager (SSMS)
-Location: sql/schema.sql
+Location: app/schema.sql
+## PostgreSQL Mapping (Important Note)
+
+Although the current implementation runs on **MS SQL Server**, the schema is designed to be **fully compatible with PostgreSQL**. To migrate:
+
+- Replace `IDENTITY(1,1)` with:
+  - `SERIAL`, **or**
+  - `GENERATED ALWAYS AS IDENTITY`
+
+- Map `NVARCHAR(MAX)` to `TEXT`
+
+ The logical relationships (**Parent–Child structure**) and the indexing strategy remain the same.
 
 ### Step 3 — Process Documents
 ```bash
@@ -52,9 +63,9 @@ python export_all_clean_json.py
 ```
 ### Step 4 — Load to SQL Server
 ```bash
-python load_laws_sqlserver.py
-python load_judgments_sqlserver.py
-python load_fatwas_sqlserver.py
+python load_files/load_laws_sqlserver.py
+python load_files/load_judgments_sqlserver.py
+python load_files/load_fatwas_sqlserver.py
 ```
 ### Step 5 — Launch API
 ```bash
@@ -402,17 +413,6 @@ The schema is divided into three main document silos, each following a **Parent�
   - Session/issue dates
 - **Child (`Fatwa_Principle`):** Stores the core principles extracted from the opinion.
   - Keeps the fatwa content structured and searchable by principle.
-## PostgreSQL Mapping (Important Note)
-
-Although the current implementation runs on **MS SQL Server**, the schema is designed to be **fully compatible with PostgreSQL**. To migrate:
-
-- Replace `IDENTITY(1,1)` with:
-  - `SERIAL`, **or**
-  - `GENERATED ALWAYS AS IDENTITY`
-
-- Map `NVARCHAR(MAX)` to `TEXT`
-
- The logical relationships (**Parent–Child structure**) and the indexing strategy remain the same.
 
 ## Helpful Indexes (Idempotent Loaders)
 
